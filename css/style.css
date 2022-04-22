@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #00FFF0;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+button {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main-area, .ball-area {
+    height: calc(100vh - 50px);
+    position: relative
+}
+
+.introduction {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.introduction h1 {
+    font-size: 80px;
+}
+
+.introduction h3 {
+    margin-top: 10vh;
+    font-size: 40px;
+}
+
+.levels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 10%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.levels button {
+    border: 0;
+    background: transparent;
+    font-size: 32px;
+    font-family: inherit;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.ball {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid #666666;
+    z-index: 2;
+}
+
+.menu {
+    height: 50px;
+    position: relative;
+    visibility: hidden;
+}
+
+.timer {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.scores-area {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+}
+
+.scores-area p, .timer, #play-again {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.scores-area p {
+    margin-left: 10px;
+}
+
+#play-again {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+#play-again button {
+    border: 0;
+    background: transparent;
+    font-weight: bold;
+}

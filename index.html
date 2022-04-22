@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Javascript Game</title>
+</head>
+<body>
+    <main>
+        <div id="main-area" class="ball-area">
+            <div class="introduction">
+                <h1>Click ball game</h1>
+                <p>Instructions: Click as many balls as you can with the time you have</p>
+                <p>The game will end in two possible ways: if the timer runs out or if the screen get completely full of balls, whatever comes first. Good luck!</p>
+                <h3>Select level:</h3>
+                <div class="levels">
+                    <button class="level" id="easy" onmouseover="setBackground('easy')" onclick="start('easy')">Easy</button>
+                    <button class="level" id="medium" onmouseover="setBackground('medium')" onclick="start('medium')">Medium</button>
+                    <button class="level" id="hard" onmouseover="setBackground('hard')" onclick="start('hard')">Hard</button>
+                    <button class="level" id="insane" onmouseover="setBackground('insane')" onclick="start('hard')">Insane</button>
+                </div>
+            </div>
+            <div id="ball-area"></div>
+        </div>
+        <div class="menu">
+            <div id="timer" class="timer">Time left: <span>90 seconds</span></div>
+            <div id="play-again"><p>Game over. <button onclick="playAgain()">Play again?</button></p></div>
+            <div class="scores-area">
+                <p id="score">Score: <span>0</span></p>
+                <p id="high-score">High score: <span>0</span></p>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
